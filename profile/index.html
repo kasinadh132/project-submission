@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Profile Card Hover Animation | CodingNepal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>B-MEN.TECH</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="profile\index.html" class="navbar__links">Profile</a>
+                </li>
+                <li class="navbar__btn"><a href="login\index.html" class="button">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="wrapper">
+            <a href="#">
+                <img src="images\kasi.jpeg" herf="image">
+            </a>
+            <div class="title">
+                Swayampakula.V.S.S.Pavanakasinadh
+            </div>
+            <div class="place">
+                Parul university,Vadodara,Gujarath
+            </div>
+        </div>
+        <div class="content">
+            <p>
+                User Interface Designer and <br>front-end developer
+            </p>
+            <div class="buttons">
+                <div class="btn">
+                    <button>Message</button>
+                </div>
+                <div class="btn">
+                    <button>Following</button>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <li><a href="https://www.facebook.com/s.kasinadh.1"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="https://twitter.com/Kasinadha353l"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://www.instagram.com/skasinadh/"><span class="fab fa-instagram"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/swayampakula-v-s-s-pavanakasinadhasarma-90634920b/"><span class="fab fa-linkedin"></span></a></li>
+            <li><a href="https://github.com/kasinadh132"><span class="fab fa-github"></span></a></li>
+        </div>
+    </div>
+    <script>
+        const img = document.querySelector("img");
+        const icons = document.querySelector(".icons");
+        img.onclick = function() {
+            this.classList.toggle("active");
+            icons.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
