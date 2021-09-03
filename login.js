@@ -7,7 +7,8 @@ LoginButton.onclick = function()
     location.href = 'etc/bypass/index.html';
 }
 
-SignUp.onclick = function() {
+SignUp.onclick = function()
+{
     location.href = 'etc/bypass/index.html';
 
 }
