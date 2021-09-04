@@ -71,7 +71,7 @@
                         <input type="password" placeholder="Password" required>
                     </div>
                     <div class="pass-link">
-                        <a href="#">Forgot password?</a>
+                        <a href="forgot password.html">Forgot password?</a>
                     </div>
                     <div class="field btn">
                         <div class="btn-layer"></div>
@@ -92,10 +92,10 @@
                         <input type="text" placeholder="Email Address" required>
                     </div>
                     <div class="field">
-                        <input type="password" placeholder="Password" required>
+                        <input type="Name" placeholder="Name" required>
                     </div>
                     <div class="field">
-                        <input type="password" placeholder="Confirm password" required>
+                        <input type="Password" placeholder="Password" required>
                     </div>
                     <div class="field btn">
                         <div class="btn-layer"></div>
@@ -124,7 +124,19 @@
             return false;
         });
     </script>
-    <footer>
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.ready(function() {
+                grecaptcha.execute('reCAPTCHA_site_key', {
+                    action: 'submit'
+                }).then(function(token) {
+                    // Add your logic to submit to your backend server here.
+                });
+            });
+        }
+    </script>
 </body>
 </footer>
 
