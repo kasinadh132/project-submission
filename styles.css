@@ -313,10 +313,6 @@ body {
         right: 5%;
         transform: translate(5%, 20%);
     }
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-    }
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -672,6 +668,7 @@ body {
 }
 
 .social__icons {
+    margin: 40px auto 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
