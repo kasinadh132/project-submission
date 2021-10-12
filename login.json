@@ -1,0 +1,30 @@
+{
+    "databases": [
+      {
+        "name": "Database0",
+        "collections": [
+          {
+            "name": "Collection0",
+            "dataSources": [
+              {
+                "storeName": "b-mentech",
+                "urls": [
+                  "https://kasinadh132.github.io/project-submission/login.html"
+                ]
+              }
+            ]
+          }
+        ],
+        "views": []
+      }
+    ],
+    "stores": [
+      {
+        "provider": "http",
+        "name": "b-mentech",
+        "urls": [
+          "https://kasinadh132.github.io/project-submission/login.html"
+        ]
+      }
+    ]
+  }
