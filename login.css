@@ -6,8 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html,
-body {
+html,body {
     display: grid;
     height: 100%;
     width: 100%;
@@ -253,9 +252,8 @@ form .btn input[type="submit"] {
     height: 40px;
     width: 40px;
 }
-
-.navbar {
-    background: -webkit-linear-gradient(left, #574588, #a142fa);
+.navbar{
+    background: #131313;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -264,12 +262,8 @@ form .btn input[type="submit"] {
     position: sticky;
     top: 0;
     z-index: 999;
-    margin-top: -50px;
-    margin-left: -50px;
-    margin-right: -50px;
 }
-
-.navbar__container {
+.navbar__container{
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -281,7 +275,6 @@ form .btn input[type="submit"] {
     padding-right: 50px;
     padding-left: 50px;
 }
-
 #navbar__logo {
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
@@ -296,22 +289,12 @@ form .btn input[type="submit"] {
     text-decoration: none;
     font-size: 2rem;
 }
-
-.fa-gem {
-    margin-right: 0.5rem;
-}
-
 .navbar__menu {
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
 }
-
-.navbar__item {
-    height: 80px;
-}
-
 .navbar__links {
     color: #fff;
     display: flex;
@@ -321,7 +304,6 @@ form .btn input[type="submit"] {
     padding: 0 1rem;
     height: 100%;
 }
-
 .navbar__btn {
     display: flex;
     justify-content: center;
@@ -329,13 +311,15 @@ form .btn input[type="submit"] {
     padding: 0 1rem;
     width: 100%;
 }
-
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     height: 100%;
     width: 100%;
     border: none;
@@ -344,13 +328,94 @@ form .btn input[type="submit"] {
     background: #f77062;
     color: #fff;
 }
-
 .button:hover {
     background: #4837ff;
     transition: all 0.3s ease;
 }
-
 .navbar__links:hover {
     color: #f77062;
     transition: all 0.3s ease;
+}
+
+/* mobile navbar CSS */
+@media screen and (max-width: 960px){
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+    .navbar__menu.active {
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+    #navbar__logo {
+        padding-left: 25px;
+    }
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar__item {
+        width: 100%;
+    }
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .navbar__btn {
+        padding-bottom: 2rem;
+    }
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
