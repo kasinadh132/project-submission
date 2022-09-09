@@ -359,10 +359,10 @@
 
 
 img{
-    width: 100%; max-width: 100%;
+    width: 100pt; max-width: 100pt;
 }
 div{
-    position:absolute; left: 20%; top:20%;
+    position:absolute; left: 20px; top:20px;
     width: 250px;
     transition:all 2s ease-in-out;
 }
