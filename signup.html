@@ -5,10 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="images/Untitled design.png">
     <title>B-Gen.Tech</title>
 </head>
 
 <body>
+    <nav>
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">B-GEN.TECH</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class=" navbar__links ">Home</a>
+                </li>
+                <li class="navbar__item ">
+                    <a href="tech.html" class="navbar__links ">Tech</a>
+                </li>
+                <li class="navbar__item ">
+                    <a href="profile.html " class="navbar__links ">Profile</a>
+                </li>
+                <li class="navbar__item ">
+                    <a href="certificates.html " class="navbar__links ">certificates</a>
+                </li>
+                <li class="navbar__item ">
+                    <a href="badges.html" class="navbar__links ">Badges</a>
+                </li>
+                <li class="navbar__btn "><a href="login.html " class="button ">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
@@ -65,8 +94,22 @@
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Phone Number</label>
-                                    <input class="input--style-4" type="text" name="phone">
+                                    <input type="text" name="country code" value="+91" size="2" />
+                                    <input type="text" name="phone" size="10" placeholder="Enter your mobile number" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Password</label>
+                                    <input class="input--style-4" type="password" name="password">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">confirmPassword</label>
+                                    <input class="input--style-4" type="password" name="confirmPassword">
                                 </div>
                             </div>
                         </div>
@@ -79,10 +122,14 @@
                             <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
                         </div>
                     </form>
+                    <div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="app.js">
+    </script>
 </body>
 
 </html>

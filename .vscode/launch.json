@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "127.0.0.1:3070",
+            "request": "launch",
+            "url": "127.0.0.1:3070"
+        }
+    ]
+}
